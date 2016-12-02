@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Library Value Calculater</title>
+
+    <!-- Bootstrap -->
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-8 col-sm-offset-2">
+            <table class="table" role="form">
+                <thead>
+                    <tr>
+                        <th width="20%">Input Your Use</th>
+                        <th class="text-center">Library Materials & Services</th>
+                        <th width="20%">Value of Your Use</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!--You can write anything with this pattern.-->
+                    <tr class="material">
+                        <td><input type="number" name="amount" min="0" class="form-control amount" value="0" /></td>
+                        <td align="center" class="name">Adult Books Borrowed</td>
+                        <td><input type="number" name="price" min="0" class="form-control price" value="0" /></td>
+                    </tr><!--.material-->
+                    <tr class="material">
+                        <td><input type="number" name="amount" min="0" class="form-control amount" value="0" /></td>
+                        <td align="center" class="name">YA Books Borrowed</td>
+                        <td><input type="number" name="price" min="0" class="form-control price" value="0" /></td>
+                    </tr><!--.material-->
+                    <tr class="material">
+                        <td><input type="number" name="amount" min="0" class="form-control amount" value="0" /></td>
+                        <td align="center" class="name">Childrens Books Borrowed</td>
+                        <td><input type="number" name="price" min="0" class="form-control price" value="0" /></td>
+                    </tr><!--.material-->
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td><button id="send" class="btn btn-success">Send Mail</button></td>
+                        <td><button id="clear" class="btn btn-danger">Clear Form</button></td>
+                        <td><input type="number" id="result" min="0" class="form-control" disabled /></td>
+                    </tr><!--.material-->
+                </tfoot>
+            </table>
+        </div><!--.col-->
+    </div><!--.row-->
+</div><!--.container-->
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/core.js"></script>
+</body>
+</html>
